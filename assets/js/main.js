@@ -45,6 +45,25 @@
     a.removeAttribute("data-d");
   });
 
+  /* ---- News (loaded from the JSON data file) -------------------------- */
+  const newsMount = document.getElementById("news-list");
+  if (newsMount) {
+    fetch("assets/data/news.json", { cache: "no-cache" })
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then((items) => {
+        newsMount.innerHTML = items.map((n) => `
+          <div class="news-item">
+            <div class="news-date">${n.date || ""}</div>
+            <div class="news-body">${n.tag ? '<span class="tag">' + n.tag + "</span> " : ""}${n.body || ""}</div>
+          </div>`).join("");
+      })
+      .catch((err) => {
+        newsMount.innerHTML = '<p class="pub-empty">News couldn\'t be loaded. ' +
+          "Open the site through a web server (or GitHub Pages), not the local file directly.</p>";
+        console.warn("Could not load assets/data/news.json:", err);
+      });
+  }
+
   /* ---- Publications --------------------------------------------------- */
   const mount = document.getElementById("pub-list");
   if (!mount || typeof PUBLICATIONS === "undefined") return;

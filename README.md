@@ -10,8 +10,9 @@ step, no framework — just HTML, CSS, and a little vanilla JavaScript.
 ├── index.html                 # The whole site (one page, anchored sections)
 ├── assets/
 │   ├── css/style.css          # Design system + layout (light & dark themes)
+│   ├── data/news.json         # News items (edit this to add updates)
 │   └── js/
-│       ├── main.js            # Theme toggle, mobile nav, publication rendering
+│       ├── main.js            # Theme, nav, news + publication rendering
 │       └── publications.js    # Publication data (edit this to add papers)
 ├── images/                    # Optimized portrait used in the hero
 ├── Own-publications.bib       # Source BibTeX (reference)
@@ -50,7 +51,13 @@ configure the DNS record with your registrar and enable HTTPS in Settings → Pa
   from the site entirely (it is not shown and not counted — used e.g. for
   under-review papers). A **BibTeX** entry is generated automatically for every
   publication, with per-paper *show / copy / download* controls.
-- **News** — edit the `#news` section in [`index.html`](index.html).
+- **News** — edit [`assets/data/news.json`](assets/data/news.json). Each item is an
+  object with `date`, an optional `tag` (the small chip), and `body` (the text,
+  which may contain `<strong>`, `<em>`, and `<a href="…">`). Newest first — the
+  order in the file is the order on the page. The site is served over HTTP(S), so
+  the file loads via `fetch`; when previewing locally, use the dev server (see the
+  `.claude/launch.json` config or run `python3 -m http.server`) rather than opening
+  `index.html` directly.
 - **Text, research, teaching, service** — all in [`index.html`](index.html),
   clearly commented by section.
 - **Colors / theme** — CSS variables at the top of
