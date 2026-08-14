@@ -273,8 +273,8 @@ const PUBLICATIONS = [
   {
     title: "Iterative and Incremental Refinement of Microservice-based Architectures and SLOs",
     authors: "Sandro Speth, Sarah Stieß, Sebastian Frank, Steffen Becker",
-    venue: "University of Stuttgart (OPUS)",
-    year: 2022, type: "journal", topics: ["microservices", "self-adaptive"],
+    venue: "Agility for Microservices Programming Workshop (AMP) · self-archived via University of Stuttgart (OPUS)",
+    year: 2022, type: "workshop", topics: ["microservices", "self-adaptive"],
     doi: "10.18419/OPUS-12208", first: true,
   },
   {
