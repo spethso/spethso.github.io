@@ -318,6 +318,22 @@ section:first-of-type { border-top: none; }
 }
 .tick-list li .muted { color: var(--text-muted); font-size: 0.88rem; }
 
+/* Timeline (experience & education) */
+.timeline { display: flex; flex-direction: column; }
+.tl-item {
+  display: grid; grid-template-columns: 108px 1fr; gap: 16px;
+  padding: 13px 0; border-bottom: 1px solid var(--border);
+}
+.tl-item:last-child { border-bottom: none; }
+.tl-date { color: var(--accent); font-weight: 600; font-size: 0.85rem; padding-top: 1px; }
+.tl-role { color: var(--heading); font-weight: 600; font-size: 0.98rem; }
+.tl-role em { font-style: italic; color: var(--accent-strong); font-weight: 600; }
+.tl-place { color: var(--text-muted); font-size: 0.9rem; margin-top: 1px; }
+@media (max-width: 560px) {
+  .tl-item { grid-template-columns: 1fr; gap: 3px; }
+  .tl-date { padding-top: 0; }
+}
+
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .project {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
@@ -354,8 +370,8 @@ footer {
 .footer-inner a:hover { color: var(--accent-strong); }
 
 /* ---- Responsive ------------------------------------------------------- */
-/* Collapse the nav to a burger menu before the 7 links crowd the brand. */
-@media (max-width: 940px) {
+/* Collapse the nav to a burger menu before the links crowd the brand. */
+@media (max-width: 1000px) {
   .nav-links { display: none; }
   .nav-links.open {
     display: flex; position: absolute; top: 62px; left: 0; right: 0; flex-direction: column;
