@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026",
+    "tag": "Award",
+    "body": "Received the <strong>Best Artifact Award</strong> at <strong>ICSA 2026</strong> for <em>“Supporting Architecture-Level Resilience Analysis With an Integrated Chaos and Load Experimentation Framework.”</em>"
+  },
+  {
     "date": "Aug 2025",
     "tag": "Journal",
     "body": "Our article <em>“A Method for the Quality-Aware Automated Selection of Deployment Technologies”</em> appeared in <strong>Software: Practice and Experience</strong>."

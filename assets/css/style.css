@@ -354,13 +354,8 @@ footer {
 .footer-inner a:hover { color: var(--accent-strong); }
 
 /* ---- Responsive ------------------------------------------------------- */
-@media (max-width: 860px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 34px; }
-  .hero-photo { max-width: 220px; order: -1; justify-self: center; }
-  .hero h1 { font-size: 2.3rem; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-  .card-grid, .project-grid { grid-template-columns: 1fr; }
-  .two-col, .contact-grid { grid-template-columns: 1fr; gap: 34px; }
+/* Collapse the nav to a burger menu before the 7 links crowd the brand. */
+@media (max-width: 940px) {
   .nav-links { display: none; }
   .nav-links.open {
     display: flex; position: absolute; top: 62px; left: 0; right: 0; flex-direction: column;
@@ -368,6 +363,14 @@ footer {
   }
   .nav-links.open a { padding: 10px 12px; }
   .nav-burger { display: grid; place-items: center; }
+}
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+  .hero-photo { max-width: 220px; order: -1; justify-self: center; }
+  .hero h1 { font-size: 2.3rem; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .card-grid, .project-grid { grid-template-columns: 1fr; }
+  .two-col, .contact-grid { grid-template-columns: 1fr; gap: 34px; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
