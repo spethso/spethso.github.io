@@ -5,20 +5,20 @@
 
 /* ---- Design tokens ---------------------------------------------------- */
 :root {
-  /* TUM-inspired blue as the primary academic accent */
-  --accent: #3070b3;
-  --accent-strong: #245488;
-  --accent-soft: rgba(48, 112, 179, 0.10);
-  --accent-ring: rgba(48, 112, 179, 0.30);
+  /* Gropius blue (#0083cc); darker brand-1 for accessible text on light bg */
+  --accent: #00639b;
+  --accent-strong: #00527f;
+  --accent-soft: rgba(0, 131, 204, 0.10);
+  --accent-ring: rgba(0, 131, 204, 0.28);
 
   --bg: #ffffff;
-  --bg-alt: #f5f7fa;
+  --bg-alt: #f6f6f7;
   --surface: #ffffff;
-  --surface-2: #f0f3f7;
-  --text: #1b2430;
-  --text-muted: #5a6672;
-  --heading: #131b26;
-  --border: #e3e8ef;
+  --surface-2: #ececee;
+  --text: #3c3c43;
+  --text-muted: #67676c;
+  --heading: #1b1b1f;
+  --border: #e2e2e3;
   --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
 
@@ -32,21 +32,22 @@
 }
 
 :root[data-theme="dark"] {
-  --accent: #74b4ec;
-  --accent-strong: #9ccbf5;
-  --accent-soft: rgba(116, 180, 236, 0.14);
-  --accent-ring: rgba(116, 180, 236, 0.32);
+  /* Gropius dark: bright sky-blue accent on near-black surfaces */
+  --accent: #7cd0ff;
+  --accent-strong: #9bdbff;
+  --accent-soft: rgba(0, 131, 204, 0.24);
+  --accent-ring: rgba(124, 208, 255, 0.30);
 
-  --bg: #0d1117;
-  --bg-alt: #0b0f15;
-  --surface: #151b24;
-  --surface-2: #1b2330;
-  --text: #d6dee8;
-  --text-muted: #8b98a8;
-  --heading: #f0f4f9;
-  --border: #262f3d;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.30), 0 12px 32px rgba(0, 0, 0, 0.40);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --bg: #1b1b1f;
+  --bg-alt: #161618;
+  --surface: #202127;
+  --surface-2: #2a2a31;
+  --text: #dfdfd6;
+  --text-muted: #98989f;
+  --heading: #f4f4ee;
+  --border: #3c3f44;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.32), 0 12px 32px rgba(0, 0, 0, 0.44);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
 * { box-sizing: border-box; }
@@ -245,7 +246,7 @@ section:first-of-type { border-top: none; }
 }
 .filter-btn:hover { color: var(--heading); border-color: var(--accent-ring); }
 .filter-btn.active { color: #fff; background: var(--accent); border-color: var(--accent); }
-:root[data-theme="dark"] .filter-btn.active { color: #0d1117; }
+:root[data-theme="dark"] .filter-btn.active { color: #1b1b1f; }
 
 .pub-year-group { margin-bottom: 30px; }
 .pub-year {

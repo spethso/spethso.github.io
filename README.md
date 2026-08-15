@@ -83,7 +83,7 @@ configure the DNS record with your registrar and enable HTTPS in Settings → Pa
 - **Text, research, teaching, service** — all in [`index.html`](index.html),
   clearly commented by section.
 - **Colors / theme** — CSS variables at the top of
-  [`assets/css/style.css`](assets/css/style.css). The accent is TUM blue (`#3070b3`).
+  [`assets/css/style.css`](assets/css/style.css). The accent is Gropius blue (`#0083cc`).
 
 ## Notes
 

@@ -1,13 +1,13 @@
 [
   {
-    "date": "2026",
-    "tag": "Award",
-    "body": "Received the <strong>Best Artifact Award</strong> at <strong>ICSA 2026</strong> for <em>“Supporting Architecture-Level Resilience Analysis With an Integrated Chaos and Load Experimentation Framework.”</em>"
+    "date": "Aug 2026",
+    "tag": "Presentation",
+    "body": "Invited by SDU in Vejle to present in a research seminar my talk on <em>“A Smart Architecture: AI-Driven Issue Management & Optimization”</em>."
   },
   {
-    "date": "Aug 2025",
-    "tag": "Journal",
-    "body": "Our article <em>“A Method for the Quality-Aware Automated Selection of Deployment Technologies”</em> appeared in <strong>Software: Practice and Experience</strong>."
+    "date": "June 2026",
+    "tag": "Award",
+    "body": "Received the <strong>Best Artifact Award</strong> at <strong>ICSA 2026</strong> for <em>“Supporting Architecture-Level Resilience Analysis With an Integrated Chaos and Load Experimentation Framework.”</em>"
   },
   {
     "date": "2026",
@@ -23,15 +23,5 @@
     "date": "2025",
     "tag": "Milestone",
     "body": "Completed my doctorate (<strong>Dr. rer. nat.</strong>), graded <em>summa cum laude</em>, at the University of Stuttgart on issue management and propagation analysis for component-based systems — <a href=\"https://doi.org/10.18419/opus-17321\" target=\"_blank\" rel=\"noopener\">read the dissertation ↗</a>."
-  },
-  {
-    "date": "2025",
-    "tag": "Service",
-    "body": "Elected steering-committee member of the <strong>GI Special Interest Group on Software Architecture</strong> and spokesperson of the Microservices &amp; DevOps group."
-  },
-  {
-    "date": "Jun 2025",
-    "tag": "Published",
-    "body": "Two papers on gamified and serious-game-based software engineering education presented at <strong>FSE 2025</strong>."
   }
 ]
