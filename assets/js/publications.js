@@ -1,6 +1,7 @@
 /*
- * Publication data for Sandro Speth.
- * Generated from Own-publications.bib. Edit here to add or update entries.
+ * Publication data for Sandro Speth — the single source of truth for the
+ * Publications section. Edit here to add or update entries; per-paper BibTeX is
+ * generated from this data at runtime.
  *
  * Fields:
  *   title       – paper title

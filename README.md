@@ -15,7 +15,6 @@ step, no framework — just HTML, CSS, and a little vanilla JavaScript.
 │       ├── main.js            # Theme, nav, news + publication rendering
 │       └── publications.js    # Publication data (edit this to add papers)
 ├── images/                    # Optimized portrait used in the hero
-├── Own-publications.bib       # Source BibTeX (reference)
 ├── .nojekyll                  # Tells GitHub Pages to serve files as-is
 └── README.md
 ```
