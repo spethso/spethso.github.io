@@ -106,9 +106,9 @@ const PUBLICATIONS = [
   {
     title: "Unveiling Hurdles in Software Engineering Education",
     authors: "Niklas Meißner, Nadine Nicole Koch, Sandro Speth, Uwe Breitenbücher, Steffen Becker",
-    venue: "Software Engineering 2025 (LNI)",
+    venue: "Software Engineering 2025 (SE)",
     year: 2025, type: "workshop", topics: ["education"],
-    doi: "10.18420/SE2025-38",
+    doi: "10.18420/SE2025-38", note: "Extended abstract",
   },
 
   // 2024
