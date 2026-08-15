@@ -5,9 +5,9 @@
 
 /* ---- Design tokens ---------------------------------------------------- */
 :root {
-  /* Gropius blue (#0083cc); darker brand-1 for accessible text on light bg */
-  --accent: #00639b;
-  --accent-strong: #00527f;
+  /* Gropius blue: vivid #0083cc for graphics/buttons, #00639b for accessible text */
+  --accent: #0083cc;
+  --accent-strong: #00639b;
   --accent-soft: rgba(0, 131, 204, 0.10);
   --accent-ring: rgba(0, 131, 204, 0.28);
 
@@ -84,7 +84,7 @@ a:hover { text-decoration: underline; }
   font-weight: 650;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-strong);
   margin-bottom: 0.6rem;
 }
 
@@ -184,7 +184,7 @@ section:first-of-type { border-top: none; }
   border-radius: var(--radius); padding: 22px 20px; box-shadow: var(--shadow-sm);
 }
 .stat .num { font-size: 2rem; font-weight: 700; color: var(--heading); letter-spacing: -0.02em; }
-.stat .num span { font-size: 1rem; color: var(--accent); vertical-align: super; }
+.stat .num span { font-size: 1rem; color: var(--accent-strong); vertical-align: super; }
 .stat .label { font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; }
 .stat .label em { font-style: italic; color: var(--accent-strong); font-weight: 600; }
 .stat .sub { font-size: 0.74rem; color: var(--text-muted); opacity: .8; margin-top: 6px; }
@@ -213,7 +213,7 @@ section:first-of-type { border-top: none; }
   padding: 18px 0; border-bottom: 1px solid var(--border);
 }
 .news-item:last-child { border-bottom: none; }
-.news-date { color: var(--accent); font-weight: 600; font-size: 0.86rem; padding-top: 2px; }
+.news-date { color: var(--accent-strong); font-weight: 600; font-size: 0.86rem; padding-top: 2px; }
 .news-body { color: var(--text); font-size: 0.98rem; }
 .news-body .tag {
   display: inline-block; font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
@@ -326,7 +326,7 @@ section:first-of-type { border-top: none; }
   padding: 13px 0; border-bottom: 1px solid var(--border);
 }
 .tl-item:last-child { border-bottom: none; }
-.tl-date { color: var(--accent); font-weight: 600; font-size: 0.85rem; padding-top: 1px; }
+.tl-date { color: var(--accent-strong); font-weight: 600; font-size: 0.85rem; padding-top: 1px; }
 .tl-role { color: var(--heading); font-weight: 600; font-size: 0.98rem; }
 .tl-role em { font-style: italic; color: var(--accent-strong); font-weight: 600; }
 .tl-place { color: var(--text-muted); font-size: 0.9rem; margin-top: 1px; }
@@ -343,7 +343,7 @@ section:first-of-type { border-top: none; }
 .project:hover { border-color: var(--accent-ring); transform: translateY(-2px); box-shadow: var(--shadow); }
 .project h3 { display: flex; align-items: center; gap: 8px; }
 .project h3 a { color: var(--heading); }
-.project .meta { font-size: 0.8rem; color: var(--accent); font-weight: 600; text-transform: uppercase;
+.project .meta { font-size: 0.8rem; color: var(--accent-strong); font-weight: 600; text-transform: uppercase;
   letter-spacing: 0.05em; margin-bottom: 8px; }
 .project p { font-size: 0.92rem; color: var(--text-muted); margin: 0; }
 
