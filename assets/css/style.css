@@ -176,8 +176,13 @@ section:first-of-type { border-top: none; }
 
 /* ---- Stat strip ------------------------------------------------------- */
 .stats {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
   margin-top: 46px;
+}
+/* Below wide desktop, wrap the stat tiles to a 2-col grid (doctorate full-width) */
+@media (max-width: 1000px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat.stat-text { grid-column: 1 / -1; }
 }
 .stat {
   background: var(--surface); border: 1px solid var(--border);
@@ -389,7 +394,6 @@ footer {
   .hero-grid { grid-template-columns: 1fr; gap: 34px; }
   .hero-photo { max-width: 220px; order: -1; justify-self: center; }
   .hero h1 { font-size: 2.3rem; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
   .card-grid, .project-grid { grid-template-columns: 1fr; }
   .two-col, .contact-grid { grid-template-columns: 1fr; gap: 34px; }
 }
@@ -401,8 +405,8 @@ footer {
   .hero h1 { font-size: 2rem; }
   .hero .lead { font-size: 1rem; }
 
-  /* Merge the three numeric metrics into one compact row; doctorate below */
-  .stats { grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 34px; }
+  /* Numeric metrics as a compact 2×2 grid; doctorate spans full width below */
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 34px; }
   .stat { padding: 14px 10px; text-align: center; }
   .stat .num { font-size: 1.55rem; }
   .stat .num span { font-size: 0.8rem; }
