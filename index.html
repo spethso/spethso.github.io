@@ -16,11 +16,8 @@
   <!-- Favicon: simple monogram -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230083cc'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3ESS%3C/text%3E%3C/svg%3E" />
 
-  <!-- Fonts (progressive enhancement; system fonts used as fallback) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600&display=swap" rel="stylesheet" />
-
+  <!-- Self-hosted fonts (no external requests; system fonts as fallback) -->
+  <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Set theme before paint to avoid flash -->
   <script>
@@ -488,7 +485,9 @@
   <!-- ===================== FOOTER ===================== -->
   <footer>
     <div class="wrap footer-inner">
-      <div>© <span id="footer-year">2025</span> Sandro Speth</div>
+      <div>© <span id="footer-year">2025</span> Sandro Speth ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a></div>
       <div><a href="#top">Back to top ↑</a></div>
     </div>
   </footer>

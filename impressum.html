@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum — Sandro Speth</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230083cc'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3ESS%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var s = localStorage.getItem("theme");
+      var d = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", s || (d ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <nav class="nav legal-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="dot"></span>Sandro Speth</a>
+      <a class="back" href="index.html">← Back to site</a>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <h1>Impressum</h1>
+    <p class="lead">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
+
+    <address>
+      Dr. rer. nat. Sandro Speth<br />
+      Technische Universität München<br />
+      School of Computation, Information and Technology (CIT)<br />
+      Applied Education Technologies<br />
+      Boltzmannstraße 3<br />
+      85748 Garching bei München<br />
+      Deutschland
+    </address>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail:
+      <a class="js-email" data-u="sandro.speth" data-d="tum.de" href="#" rel="nofollow"><span class="email-text">sandro.speth(at)tum.de</span></a>
+      <!-- Empfohlen als zweiter Kontaktweg — Telefonnummer eintragen und Zeile aktivieren:
+      <br />Telefon: +49 (0) …
+      -->
+    </p>
+
+    <!-- Umsatzsteuer-ID nur angeben, falls tatsächlich vorhanden (§ 5 Abs. 1 Nr. 6 DDG):
+    <h2>Umsatzsteuer-ID</h2>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE………</p>
+    -->
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>Dr. rer. nat. Sandro Speth (Anschrift wie oben)</p>
+
+    <p class="note">
+      Diese Website ist eine private, persönliche Website von Sandro Speth und kein
+      offizielles Angebot der Technischen Universität München. — This is a personal
+      website and not an official website of the Technical University of Munich.
+    </p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen
+      Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich
+      als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+      Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
+      rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
+      Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>
+
+    <h2>Haftung für Links</h2>
+    <p>Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich
+      keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr
+      übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+      oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen
+      werde ich derartige Links umgehend entfernen.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+      unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche
+      gekennzeichnet. Downloads und Kopien dieser Seite sind nur für den privaten,
+      nicht kommerziellen Gebrauch gestattet.</p>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© <span id="footer-year">2026</span> Sandro Speth ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a></div>
+      <div><a href="index.html">Back to site →</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Assemble the e-mail at runtime; the raw HTML only holds an obfuscated form.
+    document.querySelectorAll("a.js-email").forEach(function (a) {
+      var u = a.getAttribute("data-u"), d = a.getAttribute("data-d");
+      if (!u || !d) return;
+      var addr = u + "@" + d;
+      a.setAttribute("href", "mailto:" + addr);
+      var t = a.querySelector(".email-text");
+      if (t) t.textContent = addr;
+      a.removeAttribute("data-u"); a.removeAttribute("data-d");
+    });
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -379,6 +379,26 @@ footer {
 .footer-inner a { color: var(--text-muted); }
 .footer-inner a:hover { color: var(--accent-strong); }
 
+/* ---- Legal pages (Impressum / Datenschutz) --------------------------- */
+.legal-nav { border-bottom: 1px solid var(--border); }
+.legal-nav .nav-inner { justify-content: space-between; }
+.legal-nav a.back { color: var(--text-muted); font-size: 0.93rem; font-weight: 500; display: inline-flex; gap: 6px; }
+.legal-nav a.back:hover { color: var(--heading); text-decoration: none; }
+.legal { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+.legal h1 { font-size: 2rem; letter-spacing: -0.01em; margin: 0 0 0.3rem; }
+.legal .lead { color: var(--text-muted); margin: 0 0 2.4rem; }
+.legal h2 { font-size: 1.2rem; margin: 2.2rem 0 0.6rem; }
+.legal p { margin: 0 0 0.9rem; }
+.legal address { font-style: normal; line-height: 1.7; }
+.legal ul { padding-left: 20px; margin: 0 0 1rem; }
+.legal li { margin-bottom: 4px; }
+.legal .muted { color: var(--text-muted); }
+.legal .note {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 14px 16px; font-size: 0.92rem;
+  color: var(--text-muted); margin: 1.4rem 0;
+}
+
 /* ---- Responsive ------------------------------------------------------- */
 /* Collapse the nav to a burger menu before the links crowd the brand. */
 @media (max-width: 1000px) {
