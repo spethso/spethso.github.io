@@ -20,6 +20,28 @@ step, no framework — just HTML, CSS, and a little vanilla JavaScript.
 └── README.md
 ```
 
+## Run locally
+
+The page loads `assets/data/news.json` via `fetch`, which browsers block on the
+`file://` protocol — so **serve the folder over HTTP** instead of double-clicking
+`index.html`. From the project root, use any one of:
+
+```bash
+python3 -m http.server 8000
+```
+
+```bash
+npx serve .
+```
+
+```bash
+php -S localhost:8000
+```
+
+Then open the printed address (e.g. **http://localhost:8000**) in your browser.
+Stop the server with `Ctrl+C`. There is no build step — just edit a file and
+refresh the page.
+
 ## Deploy to GitHub Pages
 
 1. Create a repository. For a personal site at `https://<username>.github.io`,
