@@ -284,7 +284,7 @@ const PUBLICATIONS = [
     authors: "Sandro Speth, Sarah Stieß, Steffen Becker",
     venue: "Central European Workshop on Services and their Composition (ZEUS)",
     year: 2022, type: "workshop", topics: ["self-adaptive", "microservices"],
-    first: true,
+    url: "https://ceur-ws.org/Vol-3113/paper4.pdf", first: true,
   },
   {
     title: "Teaching during the Covid-19 Pandemic — Online Programming Education",
