@@ -31,11 +31,12 @@ const PUBLICATIONS = [
     authors: "Mario Fuksa, Sandro Speth, Steffen Becker",
     venue: "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
     year: 2026, type: "conference", topics: ["architecture"],
+    doi: "10.1145/3832783.3834370",
   },
   {
     title: "MDEO-Cloud: A Modular Cloud-Based Platform for Model-Driven Optimization",
     authors: "Niklas Krieger, Sandro Speth, Steffen Becker, Steffen Zschaler",
-    venue: "International Conference on Model Driven Engineering Languages and Systems (MODELS)",
+    venue: "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C)",
     year: 2026, type: "conference", topics: ["architecture"],
     doi: "10.1145/3837062.3838866",
   },
